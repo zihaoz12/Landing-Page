@@ -8,6 +8,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -45,6 +46,12 @@ img{
     font-size:1.2rem;
     padding-top:0.3rem;
     padding-bottom: 0.3rem;
+}
+
+.navbar .scrolled{
+    background-color:rgba(0,0,0,0.8);
+    color: red;
+    transition: background-color 500ms;
 }
 
 .navbar .container{
@@ -96,7 +103,7 @@ img{
 .section-b {
     position: relative;
     background: url('https://i.ibb.co/1RS1dqC/section-b.jpg') no-repeat bottom center/cover;
-    height: 600px;
+    height: 500px;
 }
 
 .section-b-inner{
@@ -226,6 +233,14 @@ img{
 }
 .btn:hover{
     background: var(--secondary-color);
+}
+
+.back-to-top{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    display: none;
+    cursor: pointer;
 }
 
 .overlay{
